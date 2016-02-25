@@ -8,8 +8,9 @@ public class Comp {
     
     
     private String nombre;
-    private double id;
+    private int id;
     private int estilo[] = new int [6];
+    private String categoria;
     
     
     Scanner lector = new Scanner(System.in);
@@ -22,11 +23,11 @@ public class Comp {
         this.nombre = nombre;
     }
 
-    public double getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(double id) {
+    public void setId(int id) {
         this.id = id;
     }
     
@@ -37,6 +38,14 @@ public class Comp {
 
     public void setEstilo(int[] estilo) {
         this.estilo = estilo;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
     
     
